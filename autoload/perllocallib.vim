@@ -1,4 +1,4 @@
-" perllocallib.vim - description
+" perllocallib.vim - Set local::lib environment variables.
 "
 " Author:  Kazuhito Hokamura <http://webtech-walker.com/>
 " Version: 0.0.1
