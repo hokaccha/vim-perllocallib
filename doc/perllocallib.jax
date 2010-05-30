@@ -17,8 +17,7 @@ CHANGELOG		|perllocallib-changelog|
 ==============================================================================
 INTRODUCTION					*perllocallib-introduction*
 
-Setting environment variable $PATH, $PERL5LIB, $PERL_MM_OPT using perl
-local::lib.
+perlのlocal::libを使って環境変数の$PATH, $PERL5LIB, $PERL_MM_OPTを設定します。
 
 ==============================================================================
 INTERFACE					*perllocallib-interface*
@@ -27,19 +26,18 @@ INTERFACE					*perllocallib-interface*
 COMMANDS					*perllocallib-commands*
 
 :Locallib {directory}				*:Locallib*
-			The setting of local::lib is applied to {directory}.
+			{directory}にlocal::libの設定を適用します。
 
 ------------------------------------------------------------------------------
 FUNCTIONS					*perllocallib-functions*
 
 perllocallib#set({directory})			*perllocallib#set()*
-			The setting of local::lib is applied to {directory}.
+			{directory}にlocal::libの設定を適用します。
 
 ==============================================================================
-CHANGELOG					*prove-changelog*
+CHANGELOG					*perllocallib-changelog*
 
-0.0.1	2010-04-19
-	- Initial version.
-
+0.0.1	2010-05-19
+	- 初版。
 ==============================================================================
 vim:tw=78:ts=8:sw=8:sts=8:ft=help:norl:noet:fen:fdl=0:fdm=marker:
