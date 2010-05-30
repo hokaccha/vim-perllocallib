@@ -4,7 +4,7 @@
 " Version: 0.0.1
 " License: MIT License <http://www.opensource.org/licenses/mit-license.php>
 
-function! perllocallib#exec(install_base)
+function! perllocallib#set(install_base)
   if s:is_install_local_lib() == 0
     call s:error('not installed local::lib')
     return

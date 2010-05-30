@@ -12,7 +12,7 @@ let g:loaded_perllocallib = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
-command! -nargs=? -complete=file Locallib call perllocallib#exec(<q-args>)
+command! -nargs=? -complete=file Locallib call perllocallib#set(<q-args>)
 
 let &cpo = s:save_cpo
 
