@@ -62,12 +62,12 @@ function! s:remove_old_env(install_base)
 endfunction
 
 function! s:set_new_env(install_base)
-    let env = s:get_local_lib_env(a:install_base)
-    let $PERL_MM_OPT = s:insert_path($PERL_MM_OPT, env.perl_mm_opt)
-    let $PATH = s:insert_path($PATH, env.path)
-    for perl5lib in env.perl5libs
-        let $PERL5LIB = s:insert_path($PERL5LIB, perl5lib)
-    endfor
+  let env = s:get_local_lib_env(a:install_base)
+  let $PERL_MM_OPT = s:insert_path($PERL_MM_OPT, env.perl_mm_opt)
+  let $PATH = s:insert_path($PATH, env.path)
+  for perl5lib in env.perl5libs
+    let $PERL5LIB = s:insert_path($PERL5LIB, perl5lib)
+  endfor
 endfunction
 
 function! s:get_local_lib_env(path)
